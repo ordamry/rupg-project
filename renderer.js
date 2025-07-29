@@ -15,8 +15,12 @@ const renderUser = (user) => {
     friendsList.appendChild(li);
   });
 
-  const quoteDiv = document.getElementById("quote");
-  quoteDiv.innerHTML = `<blockquote>"${user.quote}" - Kanye</blockquote>`;
+ const quoteDiv = document.getElementById("quote");
+ quoteDiv.innerHTML = `
+  <h3>Favorite Quote</h3>
+  <blockquote>"${user.quote}" - Kanye</blockquote>
+`;
+
 
   const pokemonDiv = document.getElementById("pokemon");
   pokemonDiv.innerHTML = `
@@ -24,8 +28,12 @@ const renderUser = (user) => {
     <img src="${user.pokemon.image}" alt="${user.pokemon.name}" />
   `;
 
-  const aboutMeDiv = document.getElementById("about-me");
-  aboutMeDiv.innerHTML = `<p>${user.aboutMe}</p>`;
+const aboutMeDiv = document.getElementById("about-me");
+aboutMeDiv.innerHTML = `
+  <h3>About Me</h3>
+  <p>${user.aboutMe}</p>
+`;
+
 };
 
 const capitalize = (str) => {
