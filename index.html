@@ -8,18 +8,23 @@
 </head>
 <body>
 
-  <button id="generate-btn">Generate User</button>
+  <div class="container">
+    <button id="generate-btn" class="generate-btn">Generate User</button>
 
-  <div id="main-user"></div>
-  <div id="quote"></div>
-  <div id="pokemon"></div>
-  <div id="about-me"></div>
+    <div id="main-user" class="card main-user"></div>
 
-  <div id="friends">
-    <h3>Friends</h3>
-    <ul id="friends-list"></ul>
+    <div id="quote" class="card quote"></div>
+
+    <div id="pokemon" class="card pokemon"></div>
+
+    <div id="about-me" class="card about-me"></div>
+
+    <div id="friends" class="card friends">
+      <h3>Friends</h3>
+      <ul id="friends-list"></ul>
+    </div>
   </div>
-  
+
   <script src="apiManager.js"></script>
   <script src="user.js"></script>
   <script src="renderer.js"></script>
